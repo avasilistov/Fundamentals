@@ -14,3 +14,9 @@ def print_designs(unprinted, completed):
 print(unprinted_designs)
 
 print_designs(unprinted_designs[:], completed_models)
+
+def make_pizza(*toppings):
+    print(toppings)
+
+make_pizza('dsf', 'dsfsdf', 'dsfs')
+make_pizza('sdfsf')
