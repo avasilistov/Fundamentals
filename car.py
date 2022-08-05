@@ -1,3 +1,6 @@
+from time import sleep as s
+
+
 class Car:
 
     def __init__(self, make, model, year):
@@ -12,6 +15,12 @@ class Car:
 
     def read_odometr(self):
         print(f'This car has {self.odometr_reading} miles on it.')
+
+    def fill_gas_tank(self):
+        print('The gas tank is fillig...')
+        s(5)
+        print("The gas tank is full!")
+
 
     def update_odometr(self, mileage):
         if mileage >= self.odometr_reading:
